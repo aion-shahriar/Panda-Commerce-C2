@@ -40,6 +40,36 @@ nav {
     padding: 10px 0;
 }
 
+.product-li {
+    position: relative;
+}
+.dropdown-nav-items {
+    position: absolute;
+    top: 30%;
+    left: -50px;
+    padding: 5px 0;
+    text-align: center;
+    list-style: none;
+    background-color: white;
+    width: 150px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 2px 0px 8px rgb(0 0 0/ 15%);
+    visibility: hidden;
+}
+
+.dropdown-nav-items li {
+    margin: 5px 0;
+
+}
+
+.product-li:hover .dropdown-nav-items {
+    visibility: visible;
+    transition: 0.5s;
+    top: 100%;
+}
+
+
+
 .search-parent {
     position: relative;
     color: #bababa;
@@ -134,6 +164,7 @@ nav {
     padding: 20px;
     border-radius: 10px;
     flex: 1;
+
 }
 
 .catagory-card h3 {
